@@ -1,0 +1,117 @@
+<!--
+=========================================================
+Login Form Bootstrap 1
+=========================================================
+
+Product Page: https://uifresh.net
+Copyright 2021 UIFresh (https://uifresh.net)
+Coded by UIFresh
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/uf-style.css">
+    <title>Agro Máquinas</title>
+  </head>
+  <body>
+    <div class="uf-form-signin">
+      <div class="text-center">
+        <a href="https://uifresh.net/"><img src="./assets/img/logo-fb.png" alt="" width="100" height="100"></a>
+      <h1 class="text-white h3">Agro Máquinas</h1>
+      <h2>Pesquisar dados técnicos</h2>
+      <button  type="submit" class="btn uf-btn-primary btn-lg"><a href="login.html">Deslogar</a></button>
+      <button  type="submit" class="btn uf-btn-primary btn-lg"><a href="pesd.html">Pesquisa Detalhada</a></button>
+      </div>
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container search-table">
+            <div class="search-box">
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Digite o nome...">
+                        <script>
+                            $(document).ready(function () {
+                                $("#myInput").on("keyup", function () {
+                                    var value = $(this).val().toLowerCase();
+                                    $("#myTable tr").filter(function () {
+                                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                    });
+                                });
+                            });
+                        </script>
+                    </div> 
+                </div>
+            </div>
+            <div class="search-list">
+                <h3>Pesquisas Recentes</h3>
+                <table class="table" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Modelo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    
+                    <tr>
+                        <td>Irrigador</td>
+                        <td>NZ-0001</td>
+                    </tr>
+                    <tr>
+                        <td>Trator Ford</td>
+                        <td>JF-2350</td>
+                    </tr>
+                    <tr>
+                        <td>Pulverizador</td>
+                        <td>HJT-9878</td>
+                    </tr>
+                    <tr>
+                        <td>Semeadora</td>
+                        <td>ITK-9356</td>
+                    </tr>
+                    <tr>
+                        <td>Arado</td>
+                        <td>KLO-2892</td>
+                    </tr>
+                    <tr>
+                        <td>Colhedora</td>
+                        <td>INM-9567</td>
+                    </tr>
+                    <tr>
+                        <td>Adubadora</td>
+                        <td>KLB-4589</td>
+                    </tr>
+                    <tr>
+                        <td>Plantadora</td>
+                        <td>RPM-2319</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
